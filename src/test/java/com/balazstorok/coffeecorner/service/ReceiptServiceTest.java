@@ -1,11 +1,11 @@
-package com.balazstorok.sre.service;
+package com.balazstorok.coffeecorner.service;
 
-import com.balazstorok.sre.domain.Product;
-import com.balazstorok.sre.domain.beverage.Beverage;
-import com.balazstorok.sre.domain.beverage.BeverageType;
-import com.balazstorok.sre.domain.beverage.ExtraType;
-import com.balazstorok.sre.domain.snack.Snack;
-import com.balazstorok.sre.domain.snack.SnackType;
+import com.balazstorok.coffeecorner.domain.Product;
+import com.balazstorok.coffeecorner.domain.beverage.Beverage;
+import com.balazstorok.coffeecorner.domain.beverage.BeverageType;
+import com.balazstorok.coffeecorner.domain.beverage.ExtraType;
+import com.balazstorok.coffeecorner.domain.snack.Snack;
+import com.balazstorok.coffeecorner.domain.snack.SnackType;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Currency;

@@ -1,6 +1,6 @@
-package com.balazstorok.sre.domain;
+package com.balazstorok.coffeecorner.domain;
 
-import com.balazstorok.sre.domain.beverage.Extra;
+import com.balazstorok.coffeecorner.domain.beverage.Extra;
 import java.math.BigDecimal;
 import java.util.Objects;
 

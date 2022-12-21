@@ -1,6 +1,6 @@
 # Coffee Corner
 
-The application handles ordering of predefined products and printing the receipt as a string representation of the order to the default System.out.
+The application handles ordering of predefined products, applying discounts (1.: every 5th Beverage is free; 2.: if a beverage and a snack is ordered, one of the extra is free) and finally printing the receipt as a string representation of the order to the default System.out.
 
 ## Install
 
@@ -21,9 +21,9 @@ final Beverage orangeJuice = BeverageType.ORANGE_JUICE.create();
 final List<Product> products = Arrays.asList(largeCoffeeWithExtraMilk,
     smallCoffeeWithSpecialRoast, baconRoll, orangeJuice);
 
-final Application application = new Application();
-application.order(products);
-application.pay();
+final CoffeeCorner coffeeCorner = new CoffeeCorner();
+coffeeCorner.order(products);
+coffeeCorner.pay();
 ```
 ### Example output
 

@@ -1,6 +1,6 @@
-package com.balazstorok.sre.domain.snack;
+package com.balazstorok.coffeecorner.domain.snack;
 
-import com.balazstorok.sre.domain.ProductType;
+import com.balazstorok.coffeecorner.domain.ProductType;
 import java.math.BigDecimal;
 
 public enum SnackType implements ProductType<Snack> {

@@ -1,6 +1,6 @@
-package com.balazstorok.sre.domain.beverage;
+package com.balazstorok.coffeecorner.domain.beverage;
 
-import com.balazstorok.sre.domain.ProductType;
+import com.balazstorok.coffeecorner.domain.ProductType;
 import java.math.BigDecimal;
 
 public enum ExtraType implements ProductType<Extra> {

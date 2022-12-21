@@ -1,7 +1,7 @@
-package com.balazstorok.sre.domain.beverage;
+package com.balazstorok.coffeecorner.domain.beverage;
 
-import com.balazstorok.sre.domain.AbstractProduct;
-import com.balazstorok.sre.domain.Product;
+import com.balazstorok.coffeecorner.domain.AbstractProduct;
+import com.balazstorok.coffeecorner.domain.Product;
 import java.math.BigDecimal;
 
 public class Extra extends AbstractProduct implements Product {

@@ -1,4 +1,4 @@
-package com.balazstorok.sre.domain;
+package com.balazstorok.coffeecorner.domain;
 
 public interface ProductType<T extends Product> {
 

@@ -1,4 +1,4 @@
-package com.balazstorok.sre.service;
+package com.balazstorok.coffeecorner.service;
 
 public interface ReceiptService {
 

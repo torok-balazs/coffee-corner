@@ -1,10 +1,10 @@
-package com.balazstorok.sre.service;
+package com.balazstorok.coffeecorner.service;
 
-import com.balazstorok.sre.domain.AbstractProduct;
-import com.balazstorok.sre.domain.Product;
-import com.balazstorok.sre.domain.beverage.Beverage;
-import com.balazstorok.sre.domain.beverage.Extra;
-import com.balazstorok.sre.domain.snack.Snack;
+import com.balazstorok.coffeecorner.domain.AbstractProduct;
+import com.balazstorok.coffeecorner.domain.Product;
+import com.balazstorok.coffeecorner.domain.beverage.Beverage;
+import com.balazstorok.coffeecorner.domain.beverage.Extra;
+import com.balazstorok.coffeecorner.domain.snack.Snack;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Comparator;

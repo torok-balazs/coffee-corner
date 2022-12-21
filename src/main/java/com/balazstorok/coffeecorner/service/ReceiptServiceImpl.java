@@ -1,6 +1,6 @@
-package com.balazstorok.sre.service;
+package com.balazstorok.coffeecorner.service;
 
-import com.balazstorok.sre.domain.Product;
+import com.balazstorok.coffeecorner.domain.Product;
 import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.NumberFormat;

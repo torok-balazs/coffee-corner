@@ -1,4 +1,4 @@
-package com.balazstorok.sre.domain;
+package com.balazstorok.coffeecorner.domain;
 
 import java.math.BigDecimal;
 

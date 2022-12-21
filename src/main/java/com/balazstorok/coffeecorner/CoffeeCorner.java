@@ -1,18 +1,18 @@
-package com.balazstorok.sre;
+package com.balazstorok.coffeecorner;
 
-import com.balazstorok.sre.domain.Product;
-import com.balazstorok.sre.service.OrderService;
-import com.balazstorok.sre.service.OrderServiceImpl;
-import com.balazstorok.sre.service.ReceiptService;
-import com.balazstorok.sre.service.ReceiptServiceImpl;
+import com.balazstorok.coffeecorner.domain.Product;
+import com.balazstorok.coffeecorner.service.OrderService;
+import com.balazstorok.coffeecorner.service.OrderServiceImpl;
+import com.balazstorok.coffeecorner.service.ReceiptService;
+import com.balazstorok.coffeecorner.service.ReceiptServiceImpl;
 import java.util.List;
 
-public class Application {
+public class CoffeeCorner {
 
 	private final OrderService orderService;
 	private final ReceiptService receiptService;
 
-	public Application() {
+	public CoffeeCorner() {
 		this.orderService = new OrderServiceImpl();
 		this.receiptService = new ReceiptServiceImpl(orderService);
 	}

@@ -1,12 +1,12 @@
-package com.balazstorok.sre;
+package com.balazstorok.coffeecorner;
 
-import com.balazstorok.sre.domain.Product;
-import com.balazstorok.sre.domain.beverage.Beverage;
-import com.balazstorok.sre.domain.beverage.BeverageType;
-import com.balazstorok.sre.domain.beverage.ExtraType;
-import com.balazstorok.sre.domain.snack.Snack;
-import com.balazstorok.sre.domain.snack.SnackType;
-import com.balazstorok.sre.service.OrderServiceImpl;
+import com.balazstorok.coffeecorner.domain.Product;
+import com.balazstorok.coffeecorner.domain.beverage.Beverage;
+import com.balazstorok.coffeecorner.domain.beverage.BeverageType;
+import com.balazstorok.coffeecorner.domain.beverage.ExtraType;
+import com.balazstorok.coffeecorner.domain.snack.Snack;
+import com.balazstorok.coffeecorner.domain.snack.SnackType;
+import com.balazstorok.coffeecorner.service.OrderServiceImpl;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.text.NumberFormat;
@@ -19,11 +19,11 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class ApplicationTest {
+public class CoffeeCornerTest {
 
-	private static final Logger LOGGER = Logger.getLogger(ApplicationTest.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(CoffeeCornerTest.class.getName());
 
-	private final Application application = new Application();
+	private final CoffeeCorner coffeeCorner = new CoffeeCorner();
 	private final PrintStream systemOutStream = System.out;
 	private final ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 
@@ -41,7 +41,7 @@ public class ApplicationTest {
 	void shouldThrowExceptionWhenNoProductsAreAddedToOrder() {
 		final IllegalArgumentException illegalArgumentException = Assertions.assertThrows(
 			IllegalArgumentException.class,
-			() -> application.order(Collections.emptyList()),
+			() -> coffeeCorner.order(Collections.emptyList()),
 			"Should throw exception");
 
 		Assertions.assertNotNull(illegalArgumentException);
@@ -60,8 +60,8 @@ public class ApplicationTest {
 			baconRoll,
 			orangeJuice);
 
-		application.order(products);
-		application.pay();
+		coffeeCorner.order(products);
+		coffeeCorner.pay();
 
 		final String actualReceiptContent = byteArrayOutputStream.toString();
 		LOGGER.info(actualReceiptContent);
